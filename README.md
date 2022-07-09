@@ -23,5 +23,6 @@ Intel Xeon E-2176g, ....
 
 ## References
 
-1. http://firsttimeprogrammer.blogspot.com/2014/09/generate-slope-fields-in-r-and-python.html
-2. https://www.r-bloggers.com/2014/09/generate-slope-fields-in-r-and-python/amp/
+1. https://medium.com/@olutosinbanjo/how-to-plot-a-direction-field-with-python-1fd022e2d8f8
+2. http://firsttimeprogrammer.blogspot.com/2014/09/generate-slope-fields-in-r-and-python.html
+3. https://www.r-bloggers.com/2014/09/generate-slope-fields-in-r-and-python/amp/
