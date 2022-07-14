@@ -7,7 +7,7 @@ I adapt the economics term zero-bound limit to mean
 ```
 given that the elements of an array are of the type decimal, 
 
-the zero-element index of an array is obtained by introducing a zero-bound limit ( such as: =10E-7 ). 
+the zero-element index of an array is obtained by introducing a zero-bound limit ( such as: =10E-5, 10E-6 e.t.c). 
 
 The zero-bound limit determines the cut-down / round condition for the elements of the array 
 
