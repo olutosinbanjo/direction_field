@@ -11,7 +11,7 @@ def without_zero_bound_limit(array):
 
 """
 To get the zero index
-Introduce a zero-bound limit = 10E-7
+Introduce a zero-bound limit (= 0E-7 == rounding to 6 decimal places)
 We round the values to this limit and no further. 
 and then filter the array to obtain the zero index
 """
