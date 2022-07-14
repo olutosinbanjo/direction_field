@@ -8,39 +8,6 @@
 
 Intel DevCloud
 
-## conda environment
-
-Option 1:
-```
-conda create -y -n dpnp Intel dpnp
-
-conda install -c conda-forge dpctl
-
-conda install -c conda-forge matplotlib
-
-```
-
-Option 2:
-```
-conda create -y -n DPNP
-
-git clone --recursive git@github.com:IntelPython/dpnp.git
-
-conda install cython
-
-conda install -c conda-forge dpctl
-
-conda install -c conda-forge matplotlib
-```
-
-Using option 2:
-
-```
-$ . /0.build.sh
-$ . /0.env.sh
-$ python3 *.py
-```
-
 ## Intel Processor
 
 Intel Xeon E-2176g, ....
