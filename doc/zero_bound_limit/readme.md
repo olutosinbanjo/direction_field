@@ -30,14 +30,14 @@ def without_zero_bound_limit(array):
 
 """
 To get the zero index
-Introduce a zero-bound limit = 10E-7
+Introduce a zero-bound limit (= 0E-7 == rounding to 6 decimal places)
 We round the values to this limit and no further. 
 and then filter the array to obtain the zero index
 """
 
 def with_zero_bound_limit(array):
     array_round = np.round(array, decimals=6)
-    zero_index = np.where(array_round == 0.000000) 
+    zero_index = np.where(array_round == 0E-7) 
     equilibrium_solution = array[zero_index]
 
     print("With zero-bound limit: \n")
