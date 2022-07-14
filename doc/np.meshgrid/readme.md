@@ -44,3 +44,5 @@ plt.title('matrix_indexing: a rectangular grid of a few one hundred points, sing
 plt.show()
 ```
 ![Image_2](https://github.com/olutosinbanjo/direction_field/blob/4166af9d47e942c6ff7dff0c5c8dce065d78a349/doc/np.meshgrid/images/matrix_indexing.png)
+
+Learn more: https://numpy.org/doc/stable/reference/generated/numpy.meshgrid.html
