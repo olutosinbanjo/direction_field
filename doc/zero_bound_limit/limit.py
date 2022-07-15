@@ -26,7 +26,7 @@ Then all elements in `a` shall be rounded this limit and no further;
 and `a` shall be filtered to obtain the zero-bound element.
 
 In the case of obtaining the equilibrium solution in this project:
-The zero-bound limit determines the cut-down / round condition for the elements of the array 
+The safe zero-bound limit determines the cut-down / round condition for the elements of the array 
 and therefore allows the filtering of an array in order to obtain the equilibrium solution.
 
 """
