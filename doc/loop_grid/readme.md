@@ -2,7 +2,7 @@
 
 Functionality : To create a rectangular grid of a few one hundred points.
 
-The for loop in python can be to create a rectangular grid out of two defined one-dimensional (1-D) arrays.
+The for loop in python can be used to create a rectangular grid out of two defined one-dimensional (1-D) arrays.
 
 The for loop identifiers represent the indexing of the grid.
 
@@ -23,3 +23,5 @@ for i in x:
 plt.title('a rectangular grid of a few one hundred points, single color')
 plt.show()
 ```
+
+![Image1](https://github.com/olutosinbanjo/direction_field/blob/7ce155558f673d66995212020dab2bfdbe270185/doc/loop_grid/loop_grid.png)
