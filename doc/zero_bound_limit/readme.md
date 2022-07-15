@@ -7,7 +7,8 @@ I adapt the economics term zero-bound limit to mean
 ```
 given that the elements of an array are of the type decimal, 
 
-the zero-element index of an array is obtained by introducing a zero-bound limit ( such as: 0E-5 == 5 decimal places, 0E-6 == 6 decimal places e.t.c). 
+the zero-element index of an array is obtained by introducing a zero-bound limit ( such as: 0E-5 == 5 decimal places, 
+0E-6 == 6 decimal places e.t.c). 
 
 The zero-bound limit determines the cut-down / round condition for the elements of the array 
 
