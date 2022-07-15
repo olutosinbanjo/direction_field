@@ -1,3 +1,18 @@
+
+"""
+##################################################
+@title: Rectangular grid with points
+
+@type: np.meshgrid(matrix indexing)
+
+@author: Oluwatosin Odubanjo
+
+@email: olutosinbanjo@gmail.com
+
+@date: July, 2022
+###################################################
+"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 
