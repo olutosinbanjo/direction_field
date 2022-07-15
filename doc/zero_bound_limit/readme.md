@@ -7,7 +7,7 @@ I adapt the economics term zero-bound limit to mean
 ```
 given that the elements of an array are of the type decimal, 
 
-the zero-element index of an array is obtained by introducing a zero-bound limit ( such as: =10E-5, 10E-6 e.t.c). 
+the zero-element index of an array is obtained by introducing a zero-bound limit ( such as: 0E-5 == 5 decimal places, 0E-6 == 6 decimal places e.t.c). 
 
 The zero-bound limit determines the cut-down / round condition for the elements of the array 
 
@@ -30,14 +30,14 @@ def without_zero_bound_limit(array):
 
 """
 To get the zero index
-Introduce a zero-bound limit (= 0E-7 == rounding to 6 decimal places)
+Introduce a zero-bound limit (= 0E-6 == rounding to 6 decimal places)
 We round the values to this limit and no further. 
 and then filter the array to obtain the zero index
 """
 
 def with_zero_bound_limit(array):
     array_round = np.round(array, decimals=6)
-    zero_index = np.where(array_round == 0E-7) 
+    zero_index = np.where(array_round == 0E-6)  # == 0
     equilibrium_solution = array[zero_index]
 
     print("With zero-bound limit: \n")
