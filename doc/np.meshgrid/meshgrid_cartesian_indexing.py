@@ -1,3 +1,20 @@
+"""
+##################################################
+
+@title: Rectangular grid with points
+
+@type: np.meshgrid(cartesian indexing)
+
+@author: Oluwatosin Odubanjo
+
+@email: olutosinbanjo@gmail.com
+
+@date: July, 2022
+
+###################################################
+
+"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 
