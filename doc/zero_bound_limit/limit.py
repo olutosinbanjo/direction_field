@@ -1,6 +1,6 @@
 """
-@date: original thought: July 8, 2022.
-       properly formed: July 15, 2022.
+@date: original thought and applied: July 8, 2022.
+       properly defined: July 15, 2022.
 @author: Oluwatosin Odubanjo
 
 The Safe Zero-bound Limit
