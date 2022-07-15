@@ -1,4 +1,4 @@
-# Zero bound limit
+# Zero-bound limit
 
 In order to obtain the equilibrium solution of the differential equation, 
 
