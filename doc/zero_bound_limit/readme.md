@@ -28,7 +28,16 @@ and therefore allows the filtering of an array in order to obtain the equilibriu
 
 Example script:
 
+
 ```python3
+
+"""
+For example:
+Assuming that the element `6` in array `a` defined in main() function is
+the equilibrium solution, we can apply the safe zero-bound limit method
+in locating it.
+"""
+
 import numpy as np
 
 def without_zero_bound_limit(array):
@@ -38,13 +47,6 @@ def without_zero_bound_limit(array):
     print("Original array: ", array, '\n')
     print("Zero Index: ", zero_index, '\n')
     print("Number at zero index: ", equilibrium_solution, '\n')
-
-"""
-For example:
-Assuming that the element `6` in array `a` defined in main() function is
-the equilibrium solution, we can apply the safe zero-bound limit method
-in locating it.
-"""
 
 def with_zero_bound_limit(array):
     array_round = np.round(array, decimals=6)
