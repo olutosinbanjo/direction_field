@@ -5,6 +5,7 @@
 #######################################
 #
 # Use case np.arange, prange and range
+# Sum of elements in an array
 #
 #######################################
 """
