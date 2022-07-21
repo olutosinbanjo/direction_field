@@ -21,7 +21,7 @@ def np_arange():
     for i in np.arange(len(a)):
         sum_all += a[i]
 
-    print("np_arange : ", sum_all)
+    print("np.arange : ", sum_all)
 
 def p_range():
     a = np.array([1,2,3,4,5,6,7,8,9,10])
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 Output:
 
 ```
-np_arange :  55
+np.arange :  55
 prange :  55
 range :  55
 ```
