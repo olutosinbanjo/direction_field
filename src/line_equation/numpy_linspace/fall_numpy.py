@@ -1,10 +1,27 @@
+#                      Direction Field Visualization with Python
+#
+# Copyright 2022 Oluwatosin Odubanjo
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
 """
 
-##########################################
+##################################################
 
 # @title: DIRECTION FIELD VISUALIZATION
 
-# @package: numpy + numba 
+# @method: Straight Line Equation (SLE) method
 
 # @author: Oluwatosin Odubanjo
 
@@ -12,7 +29,7 @@
 
 # @date: July, 2022
 
-#########################################
+#################################################
 
 """
 
@@ -21,14 +38,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
+# this function defines the differential equation
 def differential_equation(v):
     dv = 9.8 - (v / 5)
     return dv
 
+# this function defines the straight line equation
 def line_equation(x1,y1,m,x):
     y = m * (x - x1) + y1
     return y
 
+# this function plots the equilibrium solution of the differential equation
 def equilibrium_solution(y_ax):
     slope_array = np.zeros([y_ax.size])
     for i in np.arange (y_ax.size): # change to prange for numba version
@@ -37,7 +57,8 @@ def equilibrium_solution(y_ax):
             if(slope_array[i] == 0E-6):
                 plt.axhline(y=j, color='black', linestyle='-')
     plt.show()
-       
+ 
+# this function plots other solutions of the differential equation
 def solutions(x_ax, y_ax):
     graph_function = "v\'(t) = 9.8 - (v/5)"
     for i in x_ax:
