@@ -1,10 +1,27 @@
+#                      Direction Field Visualization with Python
+#
+# Copyright 2022 Oluwatosin Odubanjo
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
 """
 
 ##################################################
 
 @title: Direction Field Visualization
 
-@package: numpy + dpctl{gpu}
+@package: matplotlib.pyplot.quiver (MPQ) + dpctl{gpu}
 
 @author: Oluwatosin Odubanjo
 
@@ -24,6 +41,7 @@ import time
 #np.set_printoptions(threshold=10**6)
 
 
+# this function plots the equilibrium solution of the differential equation
 def equilibrium_solution(dy, Y):
     round_dy = np.round(dy, decimals=6)         # round to 6 decimal place for accurate location of solution
     zero_index = np.where(round_dy == 0E-6)     # get index of zero element
@@ -36,6 +54,7 @@ def equilibrium_solution(dy, Y):
     #plt.show
 
 
+# this function plots other solutions of the differential equation
 def other_solutions(X, Y, dx, dy, function):
 
     # Plot other solutions
