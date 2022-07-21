@@ -1,10 +1,27 @@
+#                      Direction Field Visualization with Python
+#
+# Copyright 2022 Oluwatosin Odubanjo
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
 """
 
-##########################################
+##############################################################
 
 # @title: DIRECTION FIELD VISUALIZATION
 
-# @package: numba + numpy + user_defined linspace
+# @method: Straight Line Equation (SLE) method
 
 # @author: Oluwatosin Odubanjo
 
@@ -12,7 +29,7 @@
 
 # @date: July 08, 2022
 
-#########################################
+############################################################
 
 """
 
@@ -21,14 +38,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
+# this function defines the differential equation
 def differential_equation(v):
     dv = 9.8 - (v / 5)
     return dv
 
+# this function defines the equation of a straight line with given slope m
+# passing through a given point P(x1, y1)
 def line_equation(x1,y1,m,x):
     y = m * (x - x1) + y1
     return y
 
+# this function is an alternative to the numpy.linspace function
 def my_linspace(first_term, last_term, num_terms):
     
     sequence = np.zeros([num_terms])
@@ -42,6 +63,7 @@ def my_linspace(first_term, last_term, num_terms):
 
     return sequence
 
+# this function plots the equilibrium solution of the differential equation
 def equilibrium_solution(i_start, i_end, j_start, j_end):
     slope_array = np.zeros([j_end - j_start])
     for i in prange(i_start, i_end): 
@@ -51,6 +73,7 @@ def equilibrium_solution(i_start, i_end, j_start, j_end):
                 plt.axhline(y=j, color='black', linestyle='-')
     #plt.show()
 
+# this function plots other solutions of the differential equation  
 def solutions(i_start, i_end, j_start, j_end):
     graph_function = "v\'(t) = 9.8 - (v/5)"
     for i in prange (i_start, i_end):
