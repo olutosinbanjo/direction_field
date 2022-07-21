@@ -1,4 +1,8 @@
-# Array search
+# Example Array search in python
+
+Test Platform : Intel DevCloud
+Time complexity : Linear time complexity O(n)
+Comment: Execution time grows as the size of input grows
 
 ```python3
 """
