@@ -43,7 +43,8 @@ def differential_equation(v):
     dv = 9.8 - (v / 5)
     return dv
 
-# this function defines the straight line equation
+# this function defines the equation of a straight line with given slope m
+# passing through a given point P(x1, y1)
 def line_equation(x1,y1,m,x):
     y = m * (x - x1) + y1
     return y
