@@ -70,7 +70,7 @@ time taken : 10000000 =  0.07246477669104934
 
 Possible optimization - search algorithm for equilibrium solution check
 
-np.where vs linear_search for equilibrium_check (see python script : )
+np.where vs linear_search for equilibrium_check (see python script : [equilibrium_check.py](https://github.com/olutosinbanjo/direction_field/blob/ddaf5d4bf659a945fff50b1cdde3b75863585ce8/doc/array_search/equilibrium_check.py))
 
 s001-n141
 
