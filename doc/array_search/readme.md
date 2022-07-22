@@ -86,3 +86,64 @@ time taken : 100000 =  0.0013367990031838417
 time taken : 500000 =  0.007460077293217182
 time taken : 10000000 =  0.12051121704280376
 ```
+
+
+
+Possible optimization - search algorithm for equilibrium solution check
+
+np.where vs linear_search for equilibrium_check
+
+s001-n141
+
+function 1: np.where()
+function 2: linear_search()
+
+Time test 1
+```
+Time taken to plot function 1: 0.27234696596860886 seconds
+Time taken to plot function 2: 0.372000050265342 seconds
+```
+
+Time test 2
+```
+Time taken to plot function 1: 0.03602103888988495 seconds
+Time taken to plot function 2: 0.05720120994374156 seconds
+```
+
+Time test 3
+```
+Time taken to plot function 1: 0.036510932724922895 seconds
+Time taken to plot function 2: 0.04137762077152729 seconds
+```
+
+Time test 4
+```
+Time taken to plot function 1: 0.037083132192492485 seconds
+Time taken to plot function 2: 0.041165427304804325 seconds
+```
+
+Time test dppy kernel Instance
+
+cpu:
+
+test 1
+```
+0.5990159017965198 seconds
+```
+
+test 2
+```
+0.6225333590991795 seconds
+```
+
+gpu:
+
+test1
+```
+0.6654831650666893 seconds
+```
+
+test 2
+```
+6233123647980392 seconds
+```
