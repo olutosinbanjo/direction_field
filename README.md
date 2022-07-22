@@ -2,20 +2,63 @@
 
 The scope of this project is mathematics, numerical / scientific computing and high performance computing and the case study differential equation is the *differential equation of a falling object*. It is an extension of my **How to Plot a Direction Field with Python** article posted on medium. You can find it [here](https://medium.com/@olutosinbanjo/how-to-plot-a-direction-field-with-python-1fd022e2d8f8). 
 
+## Objectives
 
-# The difference
+The overall objective of this project is to demonstrate the visualization of a direction field with Python. Specifically, the project aims to address the following objectives: 
 
-The [medium article](https://medium.com/@olutosinbanjo/how-to-plot-a-direction-field-with-python-1fd022e2d8f8) is a quick guide on how to plot a direction field with python and the python programs were tested on my local computer. However, this project contains an updated python program for the case study of a falling object; the updated python program includes the concept of \textit{the safe zero-bound limit} to properly determine the equilibrium solution computationally. The project also includes another method for plotting a direction field asides the plt.quiver() method.
+**O1.** To use the differential equation of a falling object as a case study. 
 
-Also, in the article, I do not talk about code performance. But, this project is all about performance. Therefore, in developing the python program, I make use of the Intel® Distribution for Python® (containing Intel's accelerated python packages) on the Intel® DevCloud - a remote development sandbox that allows me develop the python programs and test their performances on latest Intel XPUs (processors). For this project, the development and testing of the python programs is on and with the Intel® E-2176G embedded with Intel® UHD Graphics P630 [0x3e96].
+**O2.** To use an open source application software in developing programs for the direction field plot.
 
-## Development Environment
+**O3.** To explore the numerical package of the python software in developing programs for the direction field plot.
 
-Intel DevCloud
+**O4.** To extend the functionality of the programs developed in O3. with Intel's data parallel python package - data parallel control, dpctl, and numba-dppy to demonstrate heterogeneous computing.
 
-## Intel Processor
+**O5.** To explore the possibilities of increasing performance of python programs developed in 03. with the data parallel package offered by Intel. 
 
-Intel Xeon E-2176g, ....
+## Approach
+
+In this project, the implementation of a direction field plot with python is based on two methods:
+
+1. The matplotlib.pyplot.quiver() (MPQ) method.
+ 
+2. The straight line equation (SLE) method.  
+
+I consider these two methods for the purpose of comparison of performance based on the time of execution as well as for the purpose of exploring SYCL-based XPU programming provided by Data Parallel Python (DPPY) as part of the Intel® Distribution of Python® (IDP). 
+
+**The following packages in DPPY are explored :**
+
+    1. Data Parallel Control (dpctl)
+    
+    2. Numba-dppy
+    
+## Technologies Used
+
+**Development Environment:** Intel devcloud - for developing, testing and running the project.
+
+**Intel Hardware:** Intel® Xeon® E-2176G.
+
+**oneAPI Toolkits:** oneAPI Base Toolkit.
+
+**Programming Support:** Intel® Distribution for Python®. 
+
+## Build source files
+
+```
+cd build_src
+
+cd build_quiver
+
+./*.sh
+
+cd build_line_equation
+
+./*.sh
+```
+
+## Read the Full documentation and performance results
+
+
 
 ## References
 
