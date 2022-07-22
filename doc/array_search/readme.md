@@ -35,7 +35,7 @@ if __name__ = "__main__":
     main()
 ```
 
-Test script : 
+Test script : [search.py](https://github.com/olutosinbanjo/direction_field/blob/83a2ba200cb3158449292126df666f51a89d67b3/doc/array_search/search.py)
 Test np.where() (seconds):
 
 test 1 
