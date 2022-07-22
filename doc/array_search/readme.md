@@ -1,4 +1,4 @@
-# Example Array search in python
+# Array search and application in project
 
 Test Platform : Intel DevCloud (s001-n141)
 
@@ -35,7 +35,9 @@ if __name__ = "__main__":
     main()
 ```
 
-Test script : [search.py](https://github.com/olutosinbanjo/direction_field/blob/83a2ba200cb3158449292126df666f51a89d67b3/doc/array_search/search.py)
+# Test script : [search.py](https://github.com/olutosinbanjo/direction_field/blob/83a2ba200cb3158449292126df666f51a89d67b3/doc/array_search/search.py)
+
+s001-n140
 Test np.where() (seconds):
 
 test 1 
@@ -68,9 +70,9 @@ time taken : 10000000 =  0.07246477669104934
 ```
 
 
-Possible optimization - search algorithm for equilibrium solution check
+# np.where vs linear_search for equilibrium_check (see python script : [equilibrium_check.py](https://github.com/olutosinbanjo/direction_field/blob/ddaf5d4bf659a945fff50b1cdde3b75863585ce8/doc/array_search/equilibrium_check.py))
 
-np.where vs linear_search for equilibrium_check (see python script : [equilibrium_check.py](https://github.com/olutosinbanjo/direction_field/blob/ddaf5d4bf659a945fff50b1cdde3b75863585ce8/doc/array_search/equilibrium_check.py))
+(Possible optimization - search algorithm for equilibrium solution check)
 
 s001-n141
 
