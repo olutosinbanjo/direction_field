@@ -23,3 +23,4 @@ Intel Xeon E-2176g, ....
 7. https://www.r-bloggers.com/2014/09/generate-slope-fields-in-r-and-python/amp/
 8. https://github.com/IntelPython/dpnp
 9. https://github.com/IntelPython/dpctl
+10. https://numpy.org/doc/
