@@ -35,7 +35,37 @@ if __name__ = "__main__":
     main()
 ```
 
+Test script : 
+Test np.where() (seconds):
 
+test 1 
+```
+time taken : 100000 =  0.0012411139905452728
+time taken : 500000 =  0.006467103958129883
+time taken : 10000000 =  0.10884666489437222
+```
+
+test 2
+```
+time taken : 100000 =  0.0012382939457893372
+time taken : 500000 =  0.0065603055991232395
+time taken : 10000000 =  0.1098435684107244
+```
+Test Linear search (seconds):
+
+test 1
+```
+time taken : 100000 =  0.0008704713545739651
+time taken : 500000 =  0.004399575293064117
+time taken : 10000000 =  0.07232033787295222
+```
+
+test 2
+```
+time taken : 100000 =  0.0008703693747520447
+time taken : 500000 =  0.004338616039603949
+time taken : 10000000 =  0.07246477669104934
+```
 
 
 Possible optimization - search algorithm for equilibrium solution check
