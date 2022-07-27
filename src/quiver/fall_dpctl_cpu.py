@@ -46,7 +46,7 @@ import time
 this function plots the equilibrium solution of the differential equation
 
 @parameters:
-            dy : 2D array containing values of the evaluated derivative function
+            dy : 2D-array containing values of the evaluated derivative function
                  over the y-axis numerial interval - coordinate matrix
             
             Y  : coordinate matrix (2D-array) of numerical interval for y-axis
@@ -73,12 +73,12 @@ this function plots other solutions of the differential equation
             
             Y        : coordinate matrix (2D-array) of numerical interval for y-axis
             
-            dx       : 2D array of ones, the same shape as dy
+            dx       : 2D-array of ones, the same shape as dy
             
-            dy       : 2D array containing values of the evaluated derivative function
+            dy       : 2D-array containing values of the evaluated derivative function
                        over the y-axis numerial interval -coordinate matrix
             
-            function : title of the function
+            function : function expression as written in mathematical text
  #####################################################################################
  """   
 def other_solutions(X, Y, dx, dy, function):
