@@ -46,8 +46,8 @@ import time
 
             v : 1D-array which is a numerial interval for the y-axis
            
- ################################################################################
- """    
+################################################################################
+"""    
 def differential_equation(v):
     dv = 9.8 - (v / 5)
     return dv
@@ -68,8 +68,8 @@ def differential_equation(v):
                  
             x  : 1D-array generated numerical interval
            
- ################################################################################
- """    
+################################################################################
+"""    
 def line_equation(x1,y1,m,x):
     y = m * (x - x1) + y1
     return y
@@ -98,8 +98,8 @@ def line_equation(x1,y1,m,x):
             
             num_terms  : number of terma expected in a sequence
            
- ################################################################################
- """    
+################################################################################
+"""    
 def my_linspace(first_term, last_term, num_terms):
     
     sequence = np.zeros([num_terms])
@@ -127,8 +127,8 @@ def my_linspace(first_term, last_term, num_terms):
             
             j_end   : ending value of the y-axis numerical interval
         
- ################################################################################
- """  
+################################################################################
+"""  
 def equilibrium_solution(i_start, i_end, j_start, j_end):
     slope_array = np.zeros([j_end - j_start])
     for i in prange(i_start, i_end): 
@@ -152,8 +152,8 @@ def equilibrium_solution(i_start, i_end, j_start, j_end):
             
             j_end   : ending value of the y-axis numerical interval
         
- ################################################################################
- """      
+################################################################################
+"""      
 def solutions(i_start, i_end, j_start, j_end):
     graph_function = "v\'(t) = 9.8 - (v/5)"
     for i in prange (i_start, i_end):
