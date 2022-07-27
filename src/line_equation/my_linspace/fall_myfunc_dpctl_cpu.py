@@ -38,18 +38,68 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
-# this function defines the differential equation
+"""
+################################################################################
+@what: this function defines the differential equation
+
+@parameters:
+
+            v : 1D-array which is a numerial interval for the y-axis
+           
+ ################################################################################
+ """    
 def differential_equation(v):
     dv = 9.8 - (v / 5)
     return dv
 
-# this function defines the equation of a straight line with given slope m
-# passing through a given point P(x1, y1)
+"""
+################################################################################
+@what: this function defines the equation of a straight line with given slope m
+       passing through a given point P(x1, y1)
+       
+@parameters:
+
+            x1 : 1D-array which is a numerial interval for the x-axis
+            
+            y1 : 1D-array which is a numerial interval for the y-axis
+            
+            m  : evaluated derivative function over the numerical interval
+                 for the y-axis
+                 
+            x  : 1D-array generated numerical interval
+           
+ ################################################################################
+ """    
 def line_equation(x1,y1,m,x):
     y = m * (x - x1) + y1
     return y
 
-# this function is an alternative to the numpy.linspace function
+"""
+################################################################################
+@what: this function is an alternative to the numpy.linspace function.
+       It is derived from the arithmetic sequence formula for finding the rth 
+       term of a sequence - 
+       
+       Ur = a + (r − 1)d 
+                   
+       where:
+                Ur = sequence of numbers
+                a  = first term in a sequence
+                r  = rth term in a sequence
+                d  = common difference in a sequence
+      So that the arithmetic sequence is then given by:
+                a, a + d, a + 2d, a + 3d, ..., a + (r − 1)d, ... 
+       
+@parameters:
+
+            first_term : first term in a sequence
+            
+            last_term  : last term in a sequence
+            
+            num_terms  : number of terma expected in a sequence
+           
+ ################################################################################
+ """    
 def my_linspace(first_term, last_term, num_terms):
     
     sequence = np.zeros([num_terms])
@@ -63,7 +113,22 @@ def my_linspace(first_term, last_term, num_terms):
 
     return sequence
 
-# this function plots the equilibrium solution of the differential equation
+"""
+################################################################################
+@what: this function plots the equilibrium solution of the differential equation
+
+@parameters:
+
+            i_start : starting value of the x-axis numerial interval
+            
+            i_end   : ending value of the x-axis numerical interval
+            
+            j_start : starting value of the y-axis numerial interval
+            
+            j_end   : ending value of the y-axis numerical interval
+        
+ ################################################################################
+ """  
 def equilibrium_solution(i_start, i_end, j_start, j_end):
     slope_array = np.zeros([j_end - j_start])
     for i in prange(i_start, i_end): 
@@ -73,7 +138,22 @@ def equilibrium_solution(i_start, i_end, j_start, j_end):
                 plt.axhline(y=j, color='black', linestyle='-')
     #plt.show()
 
-# this function plots other solutions of the differential equation    
+"""
+################################################################################
+@what: this function plots other solutions of the differential equation 
+
+@parameters:
+
+            i_start : starting value of the x-axis numerial interval
+            
+            i_end   : ending value of the x-axis numerical interval
+            
+            j_start : starting value of the y-axis numerial interval
+            
+            j_end   : ending value of the y-axis numerical interval
+        
+ ################################################################################
+ """      
 def solutions(i_start, i_end, j_start, j_end):
     graph_function = "v\'(t) = 9.8 - (v/5)"
     for i in prange (i_start, i_end):
