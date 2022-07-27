@@ -41,7 +41,16 @@ import time
 #np.set_printoptions(threshold=10**6)
 
 
-# this function plots the equilibrium solution of the differential equation
+"""
+################################################################################
+this function plots the equilibrium solution of the differential equation
+@parameters:
+            dy : 2D-array containing values of the evaluated derivative function
+                 over a numerial interval
+            
+            Y  : coordinate matrix (2D-array) of numerical interval for y-axis
+ ################################################################################
+ """   
 def equilibrium_solution(dy, Y):
     round_dy = np.round(dy, decimals=6)         # round to 6 decimal place for accurate location of solution
     zero_index = np.where(round_dy == 0E-6)     # get index of zero element
@@ -54,7 +63,22 @@ def equilibrium_solution(dy, Y):
     #plt.show
 
 
-# this function plots other solutions of the differential equation
+"""
+#####################################################################################
+this function plots other solutions of the differential equation
+@parameters:
+            X        : coordinate matrix (2D-array) of numerical interval for x-axis
+            
+            Y        : coordinate matrix (2D-array) of numerical interval for y-axis
+            
+            dx       : 2D-array of ones, the same shape as dy
+            
+            dy       : 2D-array containing values of the evaluated derivative function
+                       over a numerial interval
+            
+            function : function expression as written in mathematical text
+ #####################################################################################
+ """            
 def other_solutions(X, Y, dx, dy, function):
 
     # Plot other solutions
