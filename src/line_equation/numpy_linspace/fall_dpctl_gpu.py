@@ -46,8 +46,8 @@ import time
 @parameters:
             v : 1D-array which is a numerial interval for the y-axis
            
- ################################################################################
- """  
+################################################################################
+"""  
 def differential_equation(v):
     dv = 9.8 - (v / 5)
     return dv
@@ -67,8 +67,8 @@ def differential_equation(v):
                  
             x  : 1D-array generated numerical interval
            
- ################################################################################
- """     
+################################################################################
+"""     
 def line_equation(x1,y1,m,x):
     y = m * (x - x1) + y1
     return y
@@ -80,8 +80,8 @@ def line_equation(x1,y1,m,x):
 @parameters:
             y_ax : 1D-array which is a numerial interval for the y-axis
         
- ################################################################################
- """     
+################################################################################
+"""     
 def equilibrium_solution(y_ax):
     slope_array = np.zeros([y_ax.size])
     for i in np.arange (y_ax.size): # change to prange for numba version
@@ -100,8 +100,8 @@ def equilibrium_solution(y_ax):
             
             y_ax : 1D-array which is a numerial interval for the y-axis
         
- ################################################################################
- """   
+################################################################################
+"""   
 def solutions(x_ax, y_ax):
     graph_function = "v\'(t) = 9.8 - (v/5)"
     for i in x_ax:
