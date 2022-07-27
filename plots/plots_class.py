@@ -341,13 +341,14 @@ def main():
     bar_color = [ "#04D8B2", "#9A0EEA", "#FF796C" ]
     
     # call plot functions
+    # uncomment these to generate plots
     #percentage_difference_mpq(theme, bar_color)
     #percentage_difference_sle_np_arange(theme, bar_color)
     #percentage_difference_sle_prange(theme, bar_color)
     #percentage_difference_sle_mylinspace(theme, bar_color)
     #execution_time_compare_prange_nparange(theme, bar_color)
     #execution_time_compare_mylinspace_prangelinspace(theme, bar_color)
-    execution_time_compare_mylinspace_prangelinspace2(theme, bar_color)
+    #execution_time_compare_mylinspace_prangelinspace2(theme, bar_color)
     plt.show()
 
 if __name__ == "__main__":
