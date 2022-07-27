@@ -36,18 +36,50 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 
-# this function defines the differential equation
+
+"""
+################################################################################
+@what: this function defines the differential equation
+
+@parameters:
+            v : 1D-array which is a numerial interval for the y-axis
+           
+ ################################################################################
+ """   
 def differential_equation(v):
     dv = 9.8 - (v / 5)
     return dv
 
-# this function defines the equation of a straight line with given slope m
-# passing through a given point P(x1, y1)
+"""
+################################################################################
+@what: this function defines the equation of a straight line with given slope m
+       passing through a given point P(x1, y1)
+       
+@parameters:
+            x1 : 1D-array which is a numerial interval for the x-axis
+            
+            y1 : 1D-array which is a numerial interval for the y-axis
+            
+            m  : evaluated derivative function over the numerical interval
+                 for the y-axis
+                 
+            x  : 1D-array generated numerical interval
+           
+ ################################################################################
+ """     
 def line_equation(x1,y1,m,x):
     y = m * (x - x1) + y1
     return y
 
-# this function plots the equilibrium solution of the differential equation
+"""
+################################################################################
+@what: this function plots the equilibrium solution of the differential equation
+
+@parameters:
+            y_ax : 1D-array which is a numerial interval for the y-axis
+        
+ ################################################################################
+ """   
 def equilibrium_solution(y_ax):
     slope_array = np.zeros([y_ax.size])
     for i in np.arange (y_ax.size): # change to prange for numba version
@@ -57,7 +89,17 @@ def equilibrium_solution(y_ax):
                 plt.axhline(y=j, color='black', linestyle='-')
     plt.show()
 
-# this function plots other solutions of the differential equation    
+"""
+################################################################################
+@what:      this function plots other solutions of the differential equation
+
+@parameters:
+            x_ax : 1D-array which is a numerial interval for the x-axis
+            
+            y_ax : 1D-array which is a numerial interval for the y-axis
+        
+ ################################################################################
+ """   
 def solutions(x_ax, y_ax):
     graph_function = "v\'(t) = 9.8 - (v/5)"
     for i in x_ax:
