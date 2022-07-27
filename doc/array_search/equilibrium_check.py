@@ -43,7 +43,17 @@ import time
 # this function allows the output display elements in my array for debugging purposes
 #np.set_printoptions(threshold=10**6)
 
+"""
+################################################################################
+@what: this function plots the equilibrium solution of the differential equation
 
+@parameters:
+            dy : 2D-array containing values of the evaluated derivative function
+                 over a numerial interval
+            
+            Y  : coordinate matrix (2D-array) of numerical interval for y-axis
+#################################################################################
+"""  
 def equilibrium_solution(dy, Y):
     round_dy = np.round(dy, decimals=6)         # round to 6 decimals places to accurate location of solution 
     zero_index = np.where(round_dy == 0E-6)     # get index of zero elements (inplace of 0E-6 can also use 0)
@@ -55,6 +65,18 @@ def equilibrium_solution(dy, Y):
     plt.savefig("func1.png")
     #plt.show()
 
+"""
+################################################################################
+@what: this function plots the equilibrium solution of the differential equation
+       using the linear search algorithm
+
+@parameters:
+            dy : 2D-array containing values of the evaluated derivative function
+                 over a numerial interval
+            
+            Y  : coordinate matrix (2D-array) of numerical interval for y-axis
+#################################################################################
+"""  
 def linear_search_equilibrium_solution2(dy, Y):
     round_dy = np.round(dy, decimals=6)
     # result of round_dy is  a 2 dimesional array of
@@ -72,7 +94,23 @@ def linear_search_equilibrium_solution2(dy, Y):
      plt.savefig("func2.png")
     #plt.show()
 
-# This function is written this way to obtain a dppy kernel as in the next function below
+"""
+################################################################################
+@what: this function plots the equilibrium solution of the differential equation
+       using the linear search algorithm.
+       
+       It function is written this way to obtain a dppy kernel as in the next 
+       function below
+
+@parameters:
+            dy : 2D-array containing values of the evaluated derivative function
+                 over a numerial interval
+                 
+            x  : 1D-array - numerical interval of the x-axis
+            
+            Y  : coordinate matrix (2D-array) of numerical interval for y-axis
+#################################################################################
+"""  
 def linear_search_equilibrium_solution(dy, x, Y):
     round_dy = np.round(dy, decimals=6)
     # result of round_dy is  a 2 dimesional array of
