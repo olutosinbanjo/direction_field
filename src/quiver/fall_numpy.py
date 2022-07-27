@@ -41,7 +41,7 @@ import time
 
 """
 ################################################################################
-this function plots the equilibrium solution of the differential equation
+@what: this function plots the equilibrium solution of the differential equation
 
 @parameters:
 
@@ -64,7 +64,7 @@ def equilibrium_solution(dy, Y):
 
 """
 #####################################################################################
-this function plots other solutions of the differential equation
+@what: this function plots other solutions of the differential equation
 
 @parameters:
 
