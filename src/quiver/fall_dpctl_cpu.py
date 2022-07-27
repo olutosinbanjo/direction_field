@@ -50,8 +50,8 @@ import time
                  over the y-axis numerial interval - coordinate matrix
             
             Y  : coordinate matrix (2D-array) of numerical interval for y-axis
- ################################################################################
- """       
+################################################################################
+"""       
 def equilibrium_solution(dy, Y):
     round_dy = np.round(dy, decimals=6)         # round to 6 decimal places for accurate location of solution 
     zero_index = np.where(round_dy == 0E-6)     # get index of zero element
@@ -79,8 +79,8 @@ def equilibrium_solution(dy, Y):
                        over the y-axis numerial interval -coordinate matrix
             
             function : function expression as written in mathematical text
- #####################################################################################
- """   
+#####################################################################################
+"""   
 def other_solutions(X, Y, dx, dy, function):
 
     # Plot other solutions
