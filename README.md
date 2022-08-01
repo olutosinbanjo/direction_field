@@ -8,13 +8,13 @@ The overall objective of this project is to demonstrate the visualization of a d
 
 **O1.** To use the differential equation of a falling object as a case study. 
 
-**O2.** To use an open source application software in developing programs for the direction field plot.
+**O2.** To use an open source application softwar in developing programs for the direction field plot.
 
-**O3.** To explore the numerical package of the python software in developing programs for the direction field plot.
+**O3.** To explore the numerical package of the python software (numpy) in developing programs for the direction field plot.
 
-**O4.** To extend the functionality of the programs developed in O3. with Intel's data parallel python package - data parallel control, dpctl, and numba-dppy to demonstrate heterogeneous computing.
+**O4.** To extend the functionality of the programs developed in O3. with packages provided in the Intel’s Distribution for Python* (IDP*) in order to demonstrate heterogeneous computing.
 
-**O5.** To explore the possibilities of increasing performance of python programs developed in 03. with the data parallel package offered by Intel. 
+**O5.** To explore the possibilities of increasing performance of the python programs developed in 03. with the data parallel package offered by Intel. 
 
 ## Approach
 
@@ -24,13 +24,19 @@ In this project, the implementation of a direction field plot with python is bas
  
 2. The straight line equation (SLE) method.  
 
-I consider these two methods for the purpose of comparison of performance based on the time of execution as well as for the purpose of exploring SYCL-based XPU programming provided by Data Parallel Python (DPPY) as part of the Intel® Distribution of Python® (IDP). 
+I consider these two methods for the purpose of comparison of performance based on the time of execution  as well as for the purpose of exploring the following packages in the Intel® Distribution of Python* (IDP*):
 
 **The following packages in DPPY are explored :**
 
-    1. Data Parallel Control (dpctl)
+    1. Numpy - an optimized Python numerical package.
     
-    2. Numba-dppy
+    2. The numba.prange expression provided by Numba* - an open-source, NumPy-aware optimizing compiler for Python developed by Anaconda, Inc in collaboration with an open-source community.
+    
+    3. SYCL-based XPU programming provided by Data Parallel Python (DPPY). The following packages in DPPY are explored :
+    
+       • Data Parallel Control (dpctl) - A package for controlling execution on SYCL devices and for SYCL USM data management.
+       • Numba_dppy - A standalone extension to Numba adding SYCL kernel program-ming to Numba*.
+
     
 ## Technologies Used
 
