@@ -65,9 +65,9 @@ cd build_line_equation
 
 ## Read the Full documentation and performance results
 
-1. Read on [Github]() 
+1. Read on [Github](https://github.com/olutosinbanjo/direction_field/blob/27c242ee4b3c9bbd17c24e95eec297bbb1063cf9/doc/Direction_Field.pdf).
 
-2. Read on [Intel DevMesh](https://devmesh.intel.com/projects/direction-field-visualization-with-python) 
+2. Read on [Intel DevMesh](https://devmesh.intel.com/projects/direction-field-visualization-with-python).
 
 ## References
 
