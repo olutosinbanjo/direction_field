@@ -30,7 +30,8 @@ I consider these two methods for the purpose of comparison of performance based 
 
     1. Numpy - an optimized Python numerical package.
     
-    2. The numba.prange expression provided by Numba* - an open-source, NumPy-aware optimizing compiler for Python developed by Anaconda, Inc in collaboration with an open-source community.
+    2. The numba.prange expression provided by Numba* - an open-source, NumPy-aware optimizing compiler for Python developed by Anaconda, 
+    Inc in collaboration with an open-source community.
     
     3. SYCL-based XPU programming provided by Data Parallel Python (DPPY). The following packages in DPPY are explored :
     
